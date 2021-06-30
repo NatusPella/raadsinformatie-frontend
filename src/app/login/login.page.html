@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm" ngSubmit="register(form)">
+    <ion-grid>
+      <ion-row color="primary">
+        <ion-col>
+          <div padding>
+            <ion-item>
+              <ion-label position="floating">E-mailadres</ion-label>
+              <ion-input name="email" type="email" placeholder="naam@voorbeeld.nl" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Wachtwoord</ion-label>
+              <ion-input name="password" type="password" placeholder="" ngModel required>
+              </ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button type="submit" [disabled]="form.invalid" expand="block">Inloggen</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
