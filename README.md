@@ -1,4 +1,4 @@
-# Raadsinformatie
+# Raadsinformatie Ionic App
 
 App for the information system and digital meeting tool for municipal councils (https://github.com/NatusPella/raadsinformatie)
 
