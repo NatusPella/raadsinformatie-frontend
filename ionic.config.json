@@ -1,0 +1,7 @@
+{
+  "name": "raadsinformatie-ionic-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
