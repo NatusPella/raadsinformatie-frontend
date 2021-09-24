@@ -1,6 +1,6 @@
 # Raadsinformatie Frontend
 
-App for the information system and digital meeting tool for municipal councils (https://github.com/NatusPella/raadsinformatie)
+Frontend for the information system and digital meeting tool for municipal councils (https://github.com/NatusPella/raadsinformatie-backend)
 
 ## Usage
 SOON
