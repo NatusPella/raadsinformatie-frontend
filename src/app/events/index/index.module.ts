@@ -13,8 +13,8 @@ import { IndexPage } from './index.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    IndexPageRoutingModule
+    IndexPageRoutingModule,
   ],
   declarations: [IndexPage]
 })
-export class IndexPageModule {}
+export class IndexPageModule { }

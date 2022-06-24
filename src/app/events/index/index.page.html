@@ -8,27 +8,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item href="events/show">
-      <ion-label>Pokémon Yellow</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Mega Man X</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>The Legend of Zelda</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Pac-Man</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Super Mario World</ion-label>
+  <ion-list *ngIf="events">
+    <ion-item href="events/show/{{ event.id }}" *ngFor="let event of events.body.data">
+      <ion-label>{{ event.title }}</ion-label>
+      {{ event.description }}
     </ion-item>
   </ion-list>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button href="events/create">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <span *ngIf="!events">
+    Loading...
+  </span>
+
 </ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button href="events/create">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
